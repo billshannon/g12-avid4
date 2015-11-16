@@ -1,0 +1,64 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+}
+
+
+/*general*/
+.margin-top {
+  margin-top: 20px;
+}
+
+.margin-right {
+  margin-right: 10px;
+}
+
+/*login page*/
+
+#brand {
+  height: 60px;
+  width: 60px;
+}
+
+.navbar {
+  min-height: 100px;
+  background-color: #5E4838;
+  margin-bottom: 0px;
+  border-color: #000;
+}
+
+.fa.fa-facebook-square {
+  font-size: 40px;
+}
+
+.facebook-button {
+  margin-left: 200px;
+  width: 120px;
+  height: 50px;
+}
+
+.login-panel {
+  margin-top: 40px;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background-color: #5C4E74;
+  border-radius: 15px;
+  -moz-box-shadow: 5px 5px 5px #F47721;
+  -webkit-box-shadow: 5px 5px 5px #F47721;
+}
+
+.login {
+  max-width: 300px;
+}
+
+.login-page {
+  min-height: 800px;
+  background: url(https://images.unsplash.com/photo-1440470177828-6381dc5074ba?ixlib=rb-0.3.5&q=80&fm=jpg&s=6faf705d60f9804d03079755fb323a9a) no-repeat center center scroll;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
