@@ -1,12 +1,12 @@
 angular.module('MyApp', ['ngRoute'])
-  .controller('LoginController', ['$scope', function ($scope) {
+  .controller('LandingController', ['$scope', function ($scope) {
 
   }])
   .config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '/partials/login.html',
-        controller: 'LoginController'
+        templateUrl: '/partials/landing.html',
+        controller: 'LandingController'
       })
       .when('/page-not-found', {
         templateUrl: '/partials/error.html'

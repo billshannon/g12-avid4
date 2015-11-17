@@ -1,64 +1,86 @@
 body {
-  font-family: 'Raleway', sans-serif;
-  height: 100%;
+  font-family:'Merriweather','Helvetica Neue',Arial,sans-serif;
 }
 
-
-/*general*/
-.margin-top {
-  margin-top: 20px;
-}
-
-.margin-right {
-  margin-right: 10px;
-}
-
-/*login page*/
-
-#brand {
-  height: 60px;
-  width: 60px;
-}
-
-.navbar {
-  min-height: 100px;
-  background-color: #5E4838;
-  margin-bottom: 0px;
-  border-color: #000;
-}
-
-.fa.fa-facebook-square {
-  font-size: 40px;
-}
-
-.facebook-button {
-  margin-left: 200px;
-  width: 120px;
-  height: 50px;
-}
-
-.login-panel {
-  margin-top: 40px;
-  padding: 30px;
-  height: 100%;
-  width: 100%;
+#problem {
+  box-sizing: border-box;
+  padding-top: 100px;
+  min-height: 420px;
+  background-color: #555;
   color: #fff;
-  background-color: #5C4E74;
-  border-radius: 15px;
-  -moz-box-shadow: 5px 5px 5px #F47721;
-  -webkit-box-shadow: 5px 5px 5px #F47721;
 }
 
-.login {
-  max-width: 300px;
+#solution {
+  box-sizing: border-box;
+  padding-top: 100px;
+  min-height: 420px;
+  background-color: #f05f40;
+  color: #fff;
 }
 
-.login-page {
-  min-height: 800px;
-  background: url(https://images.unsplash.com/photo-1440470177828-6381dc5074ba?ixlib=rb-0.3.5&q=80&fm=jpg&s=6faf705d60f9804d03079755fb323a9a) no-repeat center center scroll;
-  background-color: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+#tracktivity {
+    padding-top: 50px;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    color: #fff;
+    background-image: url(images/running-kids.jpg);
+    /*background-position: center;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+hr {
+    max-width: 50px;
+    border-color: #f05f40;
+    border-width: 3px;
+}
+
+hr.light {
+    border-color: #fff;
+}
+
+.btn-primary {
+    border-color: #f05f40;
+    color: #fff;
+    background-color: #f05f40;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn {
+    border: 0;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+}
+
+
+.btn-xl {
+  margin-top: 110px;
+  padding: 15px 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+img {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.stand-out {
+  font-size: 60px;
+  text-shadow: 5px 5px 10px #333;
 }
