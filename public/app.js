@@ -22,4 +22,5 @@ angular.module('MyApp', ['ngRoute'])
         redirectTo: '/page-not-found'
       });
     $locationProvider.html5Mode(true);
-  }])
+  }]);
+  
