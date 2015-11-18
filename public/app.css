@@ -10,6 +10,19 @@ body {
 .margin-top {
   margin-top: 30px;
 }
+
+/*styling for herobar*/
+.navbar h1 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 90px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  min-height: 170px;
+}
+
+
 /*styling for landing page*/
 
 #problem {
