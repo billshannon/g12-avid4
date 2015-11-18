@@ -1,6 +1,16 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family:'Merriweather','Helvetica Neue',Arial,sans-serif;
+  height: 100%;
 }
+
+.margin-top {
+  margin-top: 30px;
+}
+/*styling for landing page*/
 
 #problem {
   box-sizing: border-box;
@@ -19,18 +29,17 @@ body {
 }
 
 #tracktivity {
-    padding-top: 50px;
-    position: relative;
-    width: 100%;
-    min-height: 500px;
-    text-align: center;
-    color: #fff;
-    background-image: url(images/running-kids.jpg);
-    /*background-position: center;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+  padding-top: 50px;
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  text-align: center;
+  color: #fff;
+  background-image: url(images/running-kids.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 hr {
@@ -71,16 +80,89 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+label, p {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-}
-
-img {
-    opacity: 0.4;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
 .stand-out {
   font-size: 60px;
   text-shadow: 5px 5px 10px #333;
+}
+
+/*styling for register page*/
+
+#register:before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  min-height: 800px;
+  width:440px;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  background: url(http://thinkpynk.com/wp-content/uploads/2015/09/Children-Playing.jpg) no-repeat center center scroll;
+  background-color: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+}
+#register label {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+#register form{
+  color: #000;
+  height:400px;
+  padding: 50px 30px;
+}
+
+#register .btn {
+  margin-top: 30px;
+  background-color: #f05f40;
+}
+
+#register .btn:hover {
+  margin-top: 30px;
+  background-color: #eb3812;
+}
+
+.margin-left {
+  margin-left: 5px;
+}
+
+.form-container {
+  background-color: rgba(255,255,255,0.9);
+  /*background-color: #fff;*/
+  border-radius: 40px;
+}
+
+.register-heading {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 60px;
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 3px 3px 6px #222;
+
+}
+
+.register-button-div {
+  text-align: center;
+}
+
+.register-button-div a {
+  color:#f05f40;
+}
+
+.register-button-div a:hover {
+  text-decoration: none;
+  color:#333;
 }
