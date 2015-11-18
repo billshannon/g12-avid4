@@ -11,22 +11,27 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic', rel='stylesheet', type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <title>g12-Avid4</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-animate.js"></script>    
     <base href="/">
 </head>
 <body>
+    <div class="nav-container">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class='header-links'>
             <ul class="nav-links nav navbar-nav pull-right">
-            <li><a href="#">Login</a></li>
+            <li><a href="#" ng-click='login = !login'>Login</a></li>
             <li class="margin-top-sm">|</li>
             <li><a href="/register">Register</a></li>
+            <li><form name="loginForm" ng-if="login" class="showLoginForm" ng-show="login" novalidate>
+            <label> Email: <input ng-class='{fieldInvalid: loginForm.email.$invalid}' class="form-control" type="email" name="email" required> </label>
+            <label> Password: <input ng-class='{fieldInvalid: loginForm.password.$invalid}' class="form-control" type="password" name="password" required> </label>
+            <button ng-disabled="loginForm.$invalid" ng-click="authenticate()" class="btn btn-warning">Submit</button>
+          </form></li>
           </ul>
         </div>
 
@@ -49,7 +54,8 @@
           
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-    </nav>  
+    </nav> 
+    </div> 
     <div ng-view>
     </div>
 

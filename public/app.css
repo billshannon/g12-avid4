@@ -15,24 +15,38 @@ body {
   margin-top: 15px;
 }
 
+.fieldInvalid {
+  border-color: red;
+}
+
 /*styling for herobar*/
 .navbar h1 {
+  color: #fff;
   font-family: 'Shadows Into Light', cursive;
   font-size: 90px;
-  opacity: 10%;
+  text-shadow: 3px 3px 6px #808080;
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-size: 18px;
+  color: #fff;
 }
 
 .navbar {
+  background-image: url(http://ffpak.org/wp-content/uploads/2015/05/header-background.png);
+  background-position: center;
   margin-bottom: 0px;
   min-height: 170px;
 }
-footer{
-  margin: 0px;
-  height: 125px;
-  background-image: url(http://www.webdesignburn.com/wp-content/uploads/2015/04/Grey-Texture-Background-and-Wallpaper-29.jpg);
+
+
+
+.showLoginForm.ng-enter {
+  animation: slideInRight 1s;
 }
-i {
-  margin: 5px 5px 5px 15px;
+
+.showLoginForm.ng-leave {
+  animation: fadeOut 1s;
 }
 
 
@@ -40,16 +54,16 @@ i {
 
 #problem {
   box-sizing: border-box;
-  padding-top: 100px;
-  min-height: 420px;
+  padding-top: 90px;
+  min-height: 315px;
   background-color: #555;
   color: #fff;
 }
 
 #solution {
   box-sizing: border-box;
-  padding-top: 100px;
-  min-height: 420px;
+  padding-top: 90px;
+  min-height: 315px;
   background-color: #f05f40;
   color: #fff;
 }
@@ -123,9 +137,7 @@ label, p, a {
   position: fixed;
   z-index: -1;
   min-height: 800px;
-  width:440px;
   width: 100%;
-  height: auto;
   padding: 50px 0;
   background: url(http://thinkpynk.com/wp-content/uploads/2015/09/Children-Playing.jpg) no-repeat center center scroll;
   background-color: #000;
@@ -139,6 +151,7 @@ label, p, a {
   -ms-filter: blur(4px);
   filter: blur(4px);
 }
+
 #register label {
   margin-top: 10px;
   font-size: 16px;
@@ -165,7 +178,6 @@ label, p, a {
 
 .form-container {
   background-color: rgba(255,255,255,0.9);
-  /*background-color: #fff;*/
   border-radius: 40px;
 }
 
@@ -190,4 +202,16 @@ label, p, a {
 .register-button-div a:hover {
   text-decoration: none;
   color:#333;
+}
+
+/*footer styling*/
+
+footer{
+  margin: 0px;
+  height: 125px;
+  background-image: url(http://www.webdesignburn.com/wp-content/uploads/2015/04/Grey-Texture-Background-and-Wallpaper-29.jpg);
+}
+
+i {
+  margin: 5px 5px 5px 15px;
 }
