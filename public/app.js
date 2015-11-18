@@ -5,6 +5,9 @@ angular.module('MyApp', ['ngAnimate', 'ngRoute'])
     .controller('RegisterController', ['$scope', function ($scope) {
 
     }])
+    .controller('TrackerController', ['$scope', function ($scope) {
+
+    }])
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
@@ -14,6 +17,10 @@ angular.module('MyApp', ['ngAnimate', 'ngRoute'])
             .when('/register', {
                 templateUrl: '/partials/register.html',
                 controller: 'RegisterController'
+            })
+            .when('/tracker', {
+              templateUrl: '/partials/tracker.html',
+              controller: 'TrackerController'
             })
             .when('/activities', {
                 templateUrl: '/partials/activities.html',

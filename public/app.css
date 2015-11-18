@@ -205,6 +205,65 @@ label, p, a {
   color:#333;
 }
 
+/*tracker view styling*/
+
+img {
+  height: 300px;
+  width: 300px;
+  transition: all 0.5s;
+}
+
+#tracker-view {
+  padding: 20px;
+  background-color: #d3d3d3;
+}
+
+.second-row {
+  padding-left: 75px;
+}
+
+.thumbnail {
+  padding-top: 40px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px #333;
+  overflow: hidden;
+}
+
+.thumbnail h3 {
+  font-weight: bold;
+}
+
+.tracker-nav {
+  padding: 20px;
+}
+
+.tracker-nav input.form-control {
+  width: 300px;
+}
+
+.filter {
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 0px;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.activity-btn {
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #6a7789;
+  color: #fff;
+}
+
+.activity-btn:hover {
+  background-color: #426489;
+  color: #fff;
+  /*border: solid 2px ;*/
+}
+
 /*footer styling*/
 
 footer{
