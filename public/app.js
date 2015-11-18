@@ -1,4 +1,4 @@
-angular.module('MyApp', ['ngRoute'])
+angular.module('MyApp', ['ngAnimate','ngRoute'])
   .controller('LandingController', ['$scope', function ($scope) {
 
   }])
