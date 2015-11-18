@@ -26,8 +26,14 @@ body {
   margin-bottom: 0px;
   min-height: 170px;
 }
-
-
+footer{
+  margin: 0px;
+  height: 125px;
+  background-image: url(http://www.webdesignburn.com/wp-content/uploads/2015/04/Grey-Texture-Background-and-Wallpaper-29.jpg);
+}
+i {
+  margin: 5px 5px 5px 15px;
+}
 
 
 /*styling for landing page*/
