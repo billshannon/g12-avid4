@@ -207,8 +207,8 @@ label, p, a {
 
 /*tracker view styling*/
 
-img {
-  height: 300px;
+.thumbnail img {
+  height: 250px;
   width: 300px;
   transition: all 0.5s;
 }
@@ -247,7 +247,7 @@ img {
   border-radius: 0px;
 }
 
-img:hover {
+.thumbnail img:hover {
   transform: scale(1.2);
 }
 
@@ -267,13 +267,14 @@ img:hover {
 /*footer styling*/
 
 footer{
+  color: #d3d3d3;
   margin: 0px;
   height: 125px;
   background-image: url(http://www.webdesignburn.com/wp-content/uploads/2015/04/Grey-Texture-Background-and-Wallpaper-29.jpg);
 }
 
 i {
-  margin: 5px 5px 5px 15px;
+  margin: 30px 5px 5px 15px;
 }
 
 
