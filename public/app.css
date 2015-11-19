@@ -407,6 +407,15 @@ aside {
   min-height: 430px;
 }
 
+#dashboard-view img {
+  height: 60%;
+  width: 80%;
+}
+
+#dashboard-view img:hover {
+  cursor: pointer;
+}
+
 .dashboard-nav button {
   margin: 30px;
 }
