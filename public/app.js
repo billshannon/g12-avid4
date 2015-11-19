@@ -27,7 +27,51 @@ angular.module('MyApp', ['ngAnimate', 'ngRoute'])
     .controller('TrackerController', ['$scope', function ($scope) {
 
     }])
-    .controller('DashboardController', ['$scope', function ($scope) {
+    .controller('DashboardController', ['$scope','$http', function ($scope, $http) {
+        $scope.kids = [];
+        var guardianId = localStorage.getItem('id');
+        $http.get('http://avid-api.cfapps.io/relationships/'+guardianId).then(function(response){
+            for (var x in response.data.rows) {
+                $http.get('http://avid-api.cfapps.io/kids/'+response.data.rows[x].kid_id).then(function(response){
+                    $scope.kids.push(response.data.rows[0])
+                })
+        
+            }
+
+        })
+        
+        $scope.addKid = function(kid) {
+            $http.post('http://avid-api.cfapps.io/kids',
+                {
+                  "data": {
+                    "type": "kid",
+                    "attributes": {
+                      "name": kid.name,
+                      "gender": kid.gender,
+                      "age": kid.age
+                    }
+                  }
+                }
+            ).then(function(response){
+                var kidId = response.data.rows[0].id;
+                $http.post('http://avid-api.cfapps.io/relationships',
+                    {
+                      "data": {
+                        "type": "relationship",
+                        "attributes": {
+                          "guardian_id": guardianId,
+                          "kid_id": kidId
+                        }
+                    }
+                }
+                ).then(function(response) {
+                    console.log(response.data);
+                })
+            });
+            $scope.kids.push($scope.kid);
+            $scope.kid = {};
+            $scope.showForm = false;
+        }
 
     }])
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
