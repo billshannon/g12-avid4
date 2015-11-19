@@ -369,3 +369,23 @@ aside {
     padding-right: 0;
     padding-left: 0;
 }
+
+#carousel {
+    background-color: #f05f40
+}
+
+.glyphicon-chevron-left {
+    color: #555
+}
+
+.glyphicon-chevron-right {
+    color: #555
+}
+
+.carousel-indicators li {
+    background-color: #555;
+}
+
+#landing-carousel .active {
+    background-color: #f05f40;
+}
