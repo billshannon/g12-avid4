@@ -380,3 +380,25 @@ aside {
 .dashboard-nav button {
   margin: 30px;
 }
+
+/* carousel stylings */
+
+#carousel {
+    background-color: #f05f40
+}
+
+.glyphicon-chevron-left {
+    color: #555
+}
+
+.glyphicon-chevron-right {
+    color: #555
+}
+
+.carousel-indicators li {
+    background-color: #555;
+}
+
+#landing-carousel .active {
+    background-color: #f05f40;
+}
