@@ -2,8 +2,27 @@ angular.module('MyApp', ['ngAnimate', 'ngRoute'])
     .controller('LandingController', ['$scope', function ($scope) {
 
     }])
-    .controller('RegisterController', ['$scope', function ($scope) {
-
+    .controller('RegisterController', ['$scope','$http', function ($scope, $http) {
+        $scope.register = function(user) {
+            $http.post('http://avid-api.cfapps.io/guardians',
+                {
+                  "data": {
+                    "type": "guardian",
+                    "attributes": {
+                      "name": user.name,
+                      "email": user.email,
+                      "password": user.password
+                    }
+                  }
+                }
+            ).then(function(response){
+                localStorage.setItem('id', response.data.rows[0].id);
+                console.log(response.data.rows[0].id);
+            });
+        }
+        // $http.get('http://avid-api.cfapps.io/guardians').then(function(response){
+        //     console.log(response.data);
+        // })
     }])
     .controller('TrackerController', ['$scope', function ($scope) {
 
