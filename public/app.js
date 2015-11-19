@@ -27,6 +27,9 @@ angular.module('MyApp', ['ngAnimate', 'ngRoute'])
     .controller('TrackerController', ['$scope', function ($scope) {
 
     }])
+    .controller('DashboardController', ['$scope', function ($scope) {
+
+    }])
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
@@ -40,6 +43,10 @@ angular.module('MyApp', ['ngAnimate', 'ngRoute'])
             .when('/tracker', {
               templateUrl: '/partials/tracker.html',
               controller: 'TrackerController'
+            })
+            .when('/dashboard', {
+              templateUrl: '/partials/dashboard.html',
+              controller: 'DashboardController'
             })
             .when('/activities', {
                 templateUrl: '/partials/activities.html',

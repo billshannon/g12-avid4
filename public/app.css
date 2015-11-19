@@ -369,3 +369,14 @@ aside {
     padding-right: 0;
     padding-left: 0;
 }
+
+/*dashboard styling*/
+
+#dashboard-view {
+  padding: 20px;
+  background-color: #d3d3d3;
+}
+
+.dashboard-nav button {
+  margin: 30px;
+}
