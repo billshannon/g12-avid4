@@ -1,86 +1,82 @@
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  font-family:'Merriweather','Helvetica Neue',Arial,sans-serif;
-  height: 100%;
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    height: 100%;
 }
 
 .margin-top {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .margin-top-sm {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 .fieldInvalid {
-  border-color: red;
+    border-color: red;
 }
 
 /*styling for herobar*/
-.navbar h1 {
-  color: #fff;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 90px;
-  text-shadow: 3px 3px 6px #808080;
-}
+/*.navbar h1 {*/
+/*color: #fff;*/
+/*font-family: 'Shadows Into Light', cursive;*/
+/*font-size: 90px;*/
+/*text-shadow: 3px 3px 6px #808080;*/
+/*}*/
 
-.navbar-default .navbar-nav>li>a {
-  font-size: 18px;
-  color: #fff;
-}
+/*.navbar {*/
+/*background-color: #455A64;*/
+/*background-position: center;*/
+/*margin-bottom: 0px;*/
+/*min-height: 170px;*/
+/*border: none;*/
+/*}*/
 
 .navbar {
-  background-image: url(http://ffpak.org/wp-content/uploads/2015/05/header-background.png);
-  background-position: center;
-  margin-bottom: 0px;
-  min-height: 170px;
-  border: none;
+    background-color: #555;
 }
 
-
-
 .showLoginForm.ng-enter {
-  animation: slideInRight 1s;
+    animation: slideInRight 1s;
 }
 
 .showLoginForm.ng-leave {
-  animation: fadeOut 1s;
+    animation: fadeOut 1s;
 }
-
 
 /*styling for landing page*/
 
 #problem {
-  box-sizing: border-box;
-  padding-top: 90px;
-  min-height: 315px;
-  background-color: #555;
-  color: #fff;
+    box-sizing: border-box;
+    padding-top: 90px;
+    min-height: 315px;
+    background-color: #555;
+    color: #fff;
 }
 
 #solution {
-  box-sizing: border-box;
-  padding-top: 90px;
-  min-height: 315px;
-  background-color: #f05f40;
-  color: #fff;
+    box-sizing: border-box;
+    padding-top: 90px;
+    min-height: 315px;
+    background-color: #f05f40;
+    color: #fff;
 }
 
 #tracktivity {
-  padding-top: 50px;
-  position: relative;
-  width: 100%;
-  min-height: 500px;
-  text-align: center;
-  color: #fff;
-  background-image: url(images/running-kids.jpg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+    padding-top: 50px;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    color: #fff;
+    background-image: url(images/running-kids.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 hr {
@@ -94,26 +90,25 @@ hr.light {
 }
 
 .btn-primary {
-    border-color: #f05f40;
-    color: #fff;
-    background-color: #f05f40;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
+border-color: #f05f40;
+color: #fff;
+background-color: #f05f40;
+-webkit-transition: all .35s;
+-moz-transition: all .35s;
+transition: all .35s;
 }
 
 .btn {
-    border: 0;
-    border-radius: 300px;
-    text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 700;
+border: 0;
+border-radius: 300px;
+text-transform: uppercase;
+font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+font-weight: 700;
 }
 
-
 .btn-xl {
-  margin-top: 110px;
-  padding: 15px 30px;
+margin-top: 110px;
+padding: 15px 30px;
 }
 
 h1,
@@ -123,164 +118,150 @@ h4,
 h5,
 h6,
 label, p, a {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .stand-out {
-  font-size: 60px;
-  text-shadow: 5px 5px 10px #333;
+    font-size: 60px;
+    text-shadow: 5px 5px 10px #333;
 }
 
 /*styling for register page*/
 
 #register {
-  padding: 0px 0px 30px 0px;
+    padding: 0px 0px 30px 0px;
 }
 
 #register:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  min-height: 800px;
-  width: 100%;
-  padding: 50px 0;
-  background: url(http://thinkpynk.com/wp-content/uploads/2015/09/Children-Playing.jpg) no-repeat center center scroll;
-  background-color: #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  -webkit-filter: blur(4px);
-  -moz-filter: blur(4px);
-  -o-filter: blur(4px);
-  -ms-filter: blur(4px);
-  filter: blur(4px);
+    content: "";
+    position: absolute;
+    z-index: -1;
+    min-height: 800px;
+    width: 100%;
+    padding: 50px 0;
+    background: url(http://thinkpynk.com/wp-content/uploads/2015/09/Children-Playing.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
 }
 
 #register label {
-  margin-top: 10px;
-  font-size: 16px;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
-#register form{
-  color: #000;
-  padding: 30px 30px;
+#register form {
+    color: #000;
+    padding: 30px 30px;
 }
 
 #register .btn {
-  margin-top: 30px;
-  background-color: #f05f40;
+    margin-top: 30px;
+    background-color: #f05f40;
 }
 
 #register .btn:hover {
-  margin-top: 30px;
-  background-color: #eb3812;
+    margin-top: 30px;
+    background-color: #eb3812;
 }
 
 .margin-left {
-  margin-left: 5px;
+    margin-left: 5px;
 }
 
 .form-container {
-  background-color: rgba(255,255,255,0.9);
-  border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 40px;
 }
 
 .register-heading {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  padding-top: 60px;
-  color: #fff;
-  font-size: 60px;
-  text-shadow: 3px 3px 6px #222;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-top: 60px;
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 3px 3px 6px #222;
 
 }
 
 .register-button-div {
-  text-align: center;
+    text-align: center;
 }
 
 .register-button-div a {
-  color:#f05f40;
+    color: #f05f40;
 }
 
 .register-button-div a:hover {
-  text-decoration: none;
-  color:#333;
+    text-decoration: none;
+    color: #333;
 }
 
 /*tracker view styling*/
 
 .thumbnail img {
-  height: 250px;
-  width: 300px;
-  transition: all 0.5s;
+    height: 250px;
+    width: 300px;
+    transition: all 0.5s;
 }
 
 #tracker-view {
-  padding: 20px;
-  background-color: #d3d3d3;
+    padding: 20px;
+    background-color: #d3d3d3;
 }
 
 .second-row {
-  padding-left: 75px;
+    padding-left: 75px;
 }
 
 .thumbnail {
-  padding-top: 40px;
-  border-radius: 15px;
-  box-shadow: 3px 3px 8px #333;
-  overflow: hidden;
+    padding-top: 40px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px #333;
+    overflow: hidden;
 }
 
 .thumbnail h3 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .tracker-nav {
-  padding: 20px;
+    padding: 20px;
 }
 
 .tracker-nav input.form-control {
-  width: 300px;
+    width: 300px;
 }
 
 .filter {
-  margin-top: 10px;
-  margin-right: 10px;
-  border-radius: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 0px;
 }
 
 .thumbnail img:hover {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .activity-btn {
-  margin-top: 10px;
-  margin-left: 10px;
-  background-color: #6a7789;
-  color: #fff;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #6a7789;
+    color: #fff;
 }
 
 .activity-btn:hover {
-  background-color: #426489;
-  color: #fff;
-  /*border: solid 2px ;*/
+    background-color: #426489;
+    color: #fff;
+    /*border: solid 2px ;*/
 }
-
-/*footer styling*/
-
-footer{
-  color: #d3d3d3;
-  margin: 0px;
-  height: 125px;
-  background-image: url(http://www.webdesignburn.com/wp-content/uploads/2015/04/Grey-Texture-Background-and-Wallpaper-29.jpg);
-}
-
-i {
-  margin: 30px 5px 5px 15px;
-}
-
 
 /* activity portfolio styles */
 
@@ -300,7 +281,7 @@ i {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(240, 95, 64, .9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -317,7 +298,7 @@ i {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -334,7 +315,7 @@ i {
     opacity: 1;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 16px;
     }
@@ -373,18 +354,19 @@ aside {
 /*dashboard styling*/
 
 #dashboard-view {
-  padding: 20px;
-  background-color: #d3d3d3;
+    padding: 20px;
+    background-color: #d3d3d3;
 }
 
 .dashboard-nav button {
-  margin: 30px;
+    margin: 30px;
 }
 
 /* carousel stylings */
 
 #carousel {
-    background-color: #f05f40
+    background-color: #f05f40;
+    margin-top: -30px;
 }
 
 .glyphicon-chevron-left {
@@ -402,3 +384,69 @@ aside {
 #landing-carousel .active {
     background-color: #f05f40;
 }
+
+/* footer style  */
+
+footer {
+    color: #CFD8DC;
+    height: 200px;
+    text-align: center;
+    background-color: #555;
+}
+
+.footer-btns {
+    padding-top: 2%;
+    padding-bottom: 10px;
+}
+
+.btn-social-icon {
+    margin: 0px 5px 0px 15px;
+    box-shadow: 3px 3px 8px #333;
+}
+
+.footer-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.footer-btn:hover {
+    background-color: #f05f40;
+    border-radius: 0px;
+    box-shadow: 1px 1px 4px #333;
+}
+
+.footer-description {
+    margin-top: 20px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 18px;
+    color: #fff;
+}
+
+.navbar-brand > a {
+    font-size: 18px;
+    color: #fff;
+}
+
+.master-header {
+    background: url(images/kids1.jpg) no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    /*opacity: 0.4;*/
+    /*filter: alpha(opacity=40); !* For IE8 and earlier *!*/
+}
+
+.logo {
+    height: 175px;
+    width: auto;
+}
+
+
+
+
+
+.master-header > h1 {
+    color: #fff
+}
+
